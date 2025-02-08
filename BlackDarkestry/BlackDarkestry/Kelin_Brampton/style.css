@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 250px;
+    padding: 10px;
+  }
+
+  #shiftList {
+    margin-bottom: 10px;
+  }
+
+  .shift-item {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  .shift-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #statusMessage {
+    margin-top: 10px;
+    font-weight: bold;
+  }

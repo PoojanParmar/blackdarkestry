@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Job Application Automator",
+  "version": "1.0",
+  "description": "Automatically refreshes and interacts with Amazon Hiring pages.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hiring.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["ping.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
